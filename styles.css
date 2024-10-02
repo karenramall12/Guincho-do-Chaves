@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    color: #f1efef;
+}
+
+h1 {
+    color: #f1efef;
+}
+
+h2 {
+    color: #f9f8f8;
+}
+
+h4 {
+    color: #f1efefd2;
+}
+
+p {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Banner */
+.banner {
+    background: url('imagem/pexels-jakob-schlothane-183270347-12093451.jpg') no-repeat center center/cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-text {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-text h2 {
+    font-size: 2.5rem;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+}
+
+.banner-text .btn {
+    margin-top: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.banner-text .btn:hover {
+    background-color: #ff9900;
+}
+
+/* Seção de Serviços */
+#servicos {
+    padding: 50px 20px;
+    background-color: #333333bf;
+}
+
+.servico-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servico-item {
+    width: 30%;
+    background-color: #05320cba;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.servico-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Seção de Contato */
+#contato {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#contato p {
+    font-size: 1.2rem;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 20px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff9900;
+}
+
+.btn-whatsapp {
+    background-color: #05320cba;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+/* Media Queries para tornar responsivo */
+@media (max-width: 768px) {
+    .banner {
+        min-height: 30vh;
+        padding: 10px;
+    }
+
+    .banner-text h2 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    .servico-item {
+        width: 100%; /* Ajusta os itens para ocupar toda a largura da tela */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .banner-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .banner-text p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
